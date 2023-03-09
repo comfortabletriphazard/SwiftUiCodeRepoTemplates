@@ -1,4 +1,18 @@
-//
+// Core Data has 3 set up steps before reading and writing data is programmed:
+// 1. Create a Data Model File
+// 2. Set up DataController.swift file as below
+// 3. Modify the NAMEOFYOURPROJECTHEREApp.swift file by adding:
+
+// @StateObject private var dataController = DataController()
+//    var body: some Scene {
+//         WindowGroup {
+//             ListView()
+//                 .environment(\.managedObjectContext, dataController.container.viewContext)
+//         }
+//     }
+
+
+
 //  DataController.swift
 //  HouseItemStorageTracker
 //
